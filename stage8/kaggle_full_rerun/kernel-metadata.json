@@ -1,0 +1,16 @@
+{
+  "id": "dungdq210/embeddinggemma-full-rerun-20261012",
+  "title": "embeddinggemma full rerun 20261012",
+  "code_file": "run_full_rerun.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "dungdq210/embeddinggemma-stage8-20261009-cc802fcc"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

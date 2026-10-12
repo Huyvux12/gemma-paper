@@ -6,6 +6,7 @@ Repository nghiên cứu thực nghiệm: thay encoder trong score ảnh–capti
 
 - [Context bàn giao](CONTEXT_HANDOFF_VI.md): mục tiêu, protocol, kết luận và hướng còn thiếu.
 - [Báo cáo hiện tại — Stage8](EmbeddingGemma2_Stage8_Report_VI.md): adapter, metric mở rộng, PAC-S, CI và GPU.
+- [Chạy lại đầy đủ trên Kaggle](RUN_ON_KAGGLE.md): kernel GPU private, dataset FULL cần gắn và lệnh dành cho agent thực thi.
 - [Báo cáo Stage1–7](baseline/EmbeddingGemma2_Research_Report_VI.md): đối chứng encoder/prefix, human ranking và nén vector.
 - [Hướng dẫn tái lập](START_HERE.md).
 - [Bảng metric đầy đủ](stage8/results/all_metrics.csv), [biểu đồ trade-off](stage8/results/adapter_tradeoff.png).

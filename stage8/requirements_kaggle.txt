@@ -1,0 +1,12 @@
+# Historical Stage8 versions; retain Kaggle's compatible CUDA torch/torchvision pair.
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
+pycocoevalcap==1.2
+transformers==5.19.0
+sentence-transformers==6.1.0
+pyarrow==25.0.1
+ftfy
+regex
+Pillow
+gdown

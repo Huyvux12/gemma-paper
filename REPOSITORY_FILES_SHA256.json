@@ -17,13 +17,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 4271,
-      "sha256": "e94149183195612dc96af03da1c7b5a85dda73515dfc26eb86940793af5dddcd"
+      "bytes": 4417,
+      "sha256": "d42ec7c582d5bb3de166ead244842ac626955481eeb27fda2d138b9f12e0a8ad"
     },
     {
       "path": "REPOSITORY_LAYOUT.md",
       "bytes": 4048,
       "sha256": "c1104dc2df7b7cda643fc4268331db6e1333a91273de5acdccffb939884ed855"
+    },
+    {
+      "path": "RUN_ON_KAGGLE.md",
+      "bytes": 6833,
+      "sha256": "d5cccb6b2e97a44750c2a87160007bce900027af1d84398c69c2555cacd4812a"
     },
     {
       "path": "START_HERE.md",
@@ -551,9 +556,34 @@
       "sha256": "4b87af87000e2e13f8b41f93e9c959f0b00d1717878e039b0dc6859a3bca5dee"
     },
     {
+      "path": "stage8/full_rerun.py",
+      "bytes": 17438,
+      "sha256": "3ba40428cfc5862ce4cff678cbeed515c8579a76ee93201f804e3e613467584c"
+    },
+    {
+      "path": "stage8/kaggle_bootstrap.py",
+      "bytes": 5029,
+      "sha256": "6ae1b948c79e7ba3b987394e1c8da512285dd18c31f5baf17fbb0b3317d17697"
+    },
+    {
       "path": "stage8/kaggle_control.py",
       "bytes": 5189,
       "sha256": "447a99ea1d068d582b8bece9587760f3968f774c0bae4636ad5f4b132af34ec6"
+    },
+    {
+      "path": "stage8/kaggle_full_rerun/kernel-metadata.json",
+      "bytes": 426,
+      "sha256": "d2dfa6cdfde325e9f0a93fc1793e3e0dee34c7a4e1d6a8163b4e2164e793068a"
+    },
+    {
+      "path": "stage8/kaggle_full_rerun/run_full_rerun.py",
+      "bytes": 278121,
+      "sha256": "a8b0e5f088c7adb5de4a0dfe6234a304f710099344088455ebc9f8e084a20f0e"
+    },
+    {
+      "path": "stage8/kaggle_full_rerun/source_sha256.json",
+      "bytes": 11309,
+      "sha256": "86fe96c363626ea94fdf2b684af4de0bad2fcc722c05dd6b53708878bdca4fe0"
     },
     {
       "path": "stage8/kaggle_kernel/run_stage8.ipynb",
@@ -586,6 +616,11 @@
       "sha256": "dbbaf848c8661e62b38643fe16fc22a98a7d87729f77165616599dbd42881864"
     },
     {
+      "path": "stage8/prepare_full_rerun.py",
+      "bytes": 6470,
+      "sha256": "9284e272e9978f9f0b641f4eace216cb666139bc9ebe11ea833d8fc0df492b57"
+    },
+    {
       "path": "stage8/prepare_kaggle.py",
       "bytes": 3939,
       "sha256": "687ceb7dbc2d2afb4c513710efd47876584b619cf8d52b3c52c78ed5c2873ad8"
@@ -604,6 +639,16 @@
       "path": "stage8/requirements_cpu.txt",
       "bytes": 80,
       "sha256": "35a8d08e52c3c711053829be0b66b3434a78ad2e602a26b120ebc8f42bca88c9"
+    },
+    {
+      "path": "stage8/requirements_kaggle.txt",
+      "bytes": 242,
+      "sha256": "32b6c821df139e4e3ef9c0a22ba004921e80d4aa280e27627828f969236a85cb"
+    },
+    {
+      "path": "stage8/rerun_inputs.py",
+      "bytes": 5244,
+      "sha256": "e6f9be2437e69f976416c3877481c541a1fb13674f17d7e76d13e3269a4e29b5"
     },
     {
       "path": "stage8/results/adapter_expanded_metrics.csv",
@@ -764,6 +809,11 @@
       "path": "stage8/results/submitted_source_v2/stage8/verify.py",
       "bytes": 1987,
       "sha256": "58f91d97a5cf1b85e0b7d84a4e5b3ca9a550026b0e8f3134a043224d8b35a2b6"
+    },
+    {
+      "path": "stage8/test_full_rerun.py",
+      "bytes": 11391,
+      "sha256": "2e24e38e9458abc6211c7da9f89a6ec2207897dd1cf4daea91998ea4b6ad739c"
     },
     {
       "path": "stage8/train_adapter.py",
