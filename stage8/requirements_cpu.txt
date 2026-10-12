@@ -1,0 +1,5 @@
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
+pycocoevalcap==1.2
+kaggle==2.2.4

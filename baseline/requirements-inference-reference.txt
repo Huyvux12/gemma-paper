@@ -1,0 +1,10 @@
+# Install a matched torch/torchvision pair for your CPU or CUDA first.
+# Final human run: torch2.14.1+cpu, torchvision0.29.1+cpu; Python3.12.
+-r requirements-analysis.txt
+transformers==5.19.0
+sentence-transformers==6.1.0
+pyarrow==25.0.1
+Pillow
+ftfy
+regex
+setuptools<81

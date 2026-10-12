@@ -1,0 +1,6 @@
+numpy==2.5.3
+scipy==1.18.1
+transformers==5.19.0
+sentence-transformers==6.1.0
+Pillow==12.3.0
+pyarrow==25.0.1

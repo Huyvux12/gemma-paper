@@ -1,6 +1,6 @@
 # EmbeddingGemma-2 cho đánh giá caption ảnh
 
-Repository nghiên cứu thực nghiệm: thay encoder trong score ảnh–caption, kiểm chứng đối chứng, nén embedding và học residual adapter ở đầu ra. Source Stage1–8 đã giải nén thành cây thư mục; có context, notebook, báo cáo, bảng metric, prediction dạng bảng và log thực thi. Checkpoint/cache embedding và ảnh mẫu chưa được công khai: xem `REPOSITORY_LAYOUT.md`.
+Repository nghiên cứu thực nghiệm: thay encoder trong score ảnh–caption, kiểm chứng đối chứng, nén embedding và học residual adapter ở đầu ra. Source Stage1–8 đã giải nén thành cây thư mục; có context, notebook, báo cáo, bảng metric tổng hợp và biểu đồ báo cáo. Checkpoint, cache embedding, record dữ liệu, manifest và log nguyên bản chưa được công khai: xem `REPOSITORY_LAYOUT.md`.
 
 ## Đọc trước
 
@@ -35,17 +35,19 @@ python -m venv .venv
 OPENBLAS_NUM_THREADS=1 .venv/bin/python stage8/pipeline.py --baseline baseline --output reproduced --device cpu
 ```
 
-Trước lệnh verify/pipeline, chép cache `.npz` từ gói bàn giao đầy đủ vào đúng đường dẫn trong `baseline/` (xem danh sách `PUBLICATION_EXCLUSIONS.json`), hoặc chạy downloader/inference theo README baseline để tạo lại. Không cần tải backbone nếu đã khôi phục cache. CUDA benchmark/PAC-S có dependency riêng trong notebook. Trọng số encoder lớn và raw dataset đầy đủ không nằm trong bộ bàn giao; downloader, revision và receipt được giữ để tải lại.
+Trước lệnh verify/pipeline, chép cache `.npz` từ gói bàn giao đầy đủ vào đúng đường dẫn trong `baseline/` (xem bố cục `REPOSITORY_LAYOUT.md`), hoặc chạy downloader/inference theo README baseline để tạo lại. Không cần tải backbone nếu đã khôi phục cache. CUDA benchmark/PAC-S có dependency riêng trong notebook. Trọng số encoder lớn và raw dataset đầy đủ không nằm trong bộ bàn giao; downloader, revision và receipt được giữ để tải lại.
 
 ## Source và bằng chứng
 
-- `baseline/`: source, báo cáo, protocol và kết quả dạng bảng của Stage1–7.
+- `baseline/`: source, báo cáo, protocol và kết quả tổng hợp của Stage1–7.
 - `stage8/*.py`: train/evaluate adapter, metric, bootstrap, GPU benchmark và Kaggle orchestration.
 - `stage8/kaggle_kernel/run_stage8.ipynb`: notebook GPU đã gửi.
 - `stage8/results/submitted_source_v1/`, `submitted_source_v2/`: source snapshot đã giải nén.
-- `stage8/results/adapter_training/`: history của 20 lần train, split và selection; các checkpoint `.npz` chưa công khai.
-- `stage8/results/kaggle_final/`: output GPU/PAC-S, runtime, log và kiểm chứng tải về.
+- `stage8/train_adapter.py`: đầy đủ logic train, checkpoint và selection; lịch sử train/checkpoint nằm trong gói đầy đủ riêng.
+- `stage8/results/kaggle_final/stage8_results/expanded_metrics.csv`: bảng metric GPU tổng hợp; raw output và metadata ở gói bàn giao riêng.
 
 Kết quả thực nghiệm chốt ngày 09/10/2026; context bàn giao ngày 11/10; bản cây GitHub ngày 12/10. Quota/trạng thái API trong log là snapshot lịch sử. Token không nằm trong repo; chỉ cấu hình credential riêng khi thực sự cần chạy Kaggle mới.
 
 Các nguồn, model và dữ liệu bên thứ ba giữ điều khoản riêng. LICENSE của snapshot SPECS được giữ tại thư mục nguồn; repo không cấp lại một giấy phép chung cho tất cả thành phần.
+
+Notebook Colab public đọc input riêng thay vì nhúng dữ liệu; xem [hướng dẫn](REPOSITORY_LAYOUT.md#notebook-colab-public) và `prepare_colab_inputs.py`.

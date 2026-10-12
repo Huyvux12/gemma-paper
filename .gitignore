@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+kaggle.json
+credentials.json
+*.pem
+reproduced/
+downloaded/
+
+gemma560_private_inputs.json
+*_private_inputs.json
