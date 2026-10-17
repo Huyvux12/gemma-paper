@@ -1,6 +1,11 @@
 {
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 272,
+      "sha256": "ce0df044b9ef14684607517d7d2a0f96322d55b5b16a4a1e5e5b3e924c9dcdcb"
+    },
+    {
       "path": ".gitignore",
       "bytes": 173,
       "sha256": "917468c48fcda58a469cb87287423085664190c126a3557d2545cd4945d35c94"
@@ -16,14 +21,19 @@
       "sha256": "74cc043a1de31902bc7645954a19dead96a2d2f70d362262ed95203dede9feef"
     },
     {
+      "path": "GEMMA_PAPER_HANDOFF_20261017_VI.md",
+      "bytes": 21456,
+      "sha256": "01381400297f9cde6cea7541692bf3730dc6d5281015c50fcaed544c2bb6ba1f"
+    },
+    {
       "path": "README.md",
-      "bytes": 4417,
-      "sha256": "d42ec7c582d5bb3de166ead244842ac626955481eeb27fda2d138b9f12e0a8ad"
+      "bytes": 5054,
+      "sha256": "bd35bca37f19885582aa2305856a865a07f630623b5aa30b6d3309f92ddd7ce2"
     },
     {
       "path": "REPOSITORY_LAYOUT.md",
-      "bytes": 4048,
-      "sha256": "c1104dc2df7b7cda643fc4268331db6e1333a91273de5acdccffb939884ed855"
+      "bytes": 5106,
+      "sha256": "e06df0674f97b2727d7df282e3213133b9e6e1d8d1109842180e1622e3c5dd06"
     },
     {
       "path": "RUN_ON_KAGGLE.md",
@@ -32,8 +42,8 @@
     },
     {
       "path": "START_HERE.md",
-      "bytes": 3427,
-      "sha256": "ed72c0fc3c8c3addfb7120b69fee28aaf600233c51445a1e52bb72327bb8ff3d"
+      "bytes": 3968,
+      "sha256": "ad46a431328be87c337b3b71cf5b1d863618d0ebd1ce69f617568428b767c0b9"
     },
     {
       "path": "baseline/EmbeddingGemma2_560_SigLIP224_Colab.ipynb",
@@ -509,6 +519,331 @@
       "path": "baseline/verify_source_bundle.py",
       "bytes": 501,
       "sha256": "dff36e7a44a639f06969b0d619000c5f34c398131476e00bb1c992c567d9791b"
+    },
+    {
+      "path": "gemma_research_public/.gitattributes",
+      "bytes": 204,
+      "sha256": "c1ee1f76875bcb6fab23f78c991a6a2679cae2d9a67b323a893a0c34beb88bad"
+    },
+    {
+      "path": "gemma_research_public/.gitignore",
+      "bytes": 123,
+      "sha256": "c82fae73cd7ef2f5ff41c7f044e9a4595cdd2787680af10ba84af40b7e08db6c"
+    },
+    {
+      "path": "gemma_research_public/IDEA_METHOD_VI.md",
+      "bytes": 6605,
+      "sha256": "1d186bd44f0ca1a82895310a7f6cfc2103b088135e83298f0b9f9891d07334d3"
+    },
+    {
+      "path": "gemma_research_public/PINNED.json",
+      "bytes": 1133,
+      "sha256": "57835bd5d8ecdf4ea7212feb8cee7bc63e107caa4d9408a1766b89a6fbe4c53f"
+    },
+    {
+      "path": "gemma_research_public/PUBLIC_FILES_SHA256.json",
+      "bytes": 6733,
+      "sha256": "cd3c33cea358ce28180d6a018bfe0ad368df64283c2ce4d0a3337db2d762de98"
+    },
+    {
+      "path": "gemma_research_public/README_VI.md",
+      "bytes": 5978,
+      "sha256": "3e5e98b0a67debc20f7779d91108da6c219daece5ebcc7fdc2a876e8b1f014e4"
+    },
+    {
+      "path": "gemma_research_public/RESULTS_VI.md",
+      "bytes": 2440,
+      "sha256": "f0e60ffeea650b898cee0b34001f3d80aee985f8dd62c1044f65ad95212ae18e"
+    },
+    {
+      "path": "gemma_research_public/VERIFICATION_VI.md",
+      "bytes": 2493,
+      "sha256": "9bc97c0ca3165b29924e51fc66da3575945e92a569bc7708e1a44a02827e7f3e"
+    },
+    {
+      "path": "gemma_research_public/notebooks/01_Gemma_CPU_Replay_Refit.ipynb",
+      "bytes": 87100,
+      "sha256": "569c89d16c9e40c01a340ade95caa650b23071b6cbf227272a7b03387eae6f8b"
+    },
+    {
+      "path": "gemma_research_public/notebooks/02_Gemma_Kaggle_Full_Rerun.ipynb",
+      "bytes": 89734,
+      "sha256": "f8ac130070cac9184caa49e43d1c9dc27e34b3e7d49616882d22a0a63101e1e1"
+    },
+    {
+      "path": "gemma_research_public/report_context/context_manifest.json",
+      "bytes": 635,
+      "sha256": "d90268e88b50075033dff3c60d425ef4f37aad059c76cf2a29e534cff4ead78e"
+    },
+    {
+      "path": "gemma_research_public/report_context/crossed_global_ci.csv",
+      "bytes": 643,
+      "sha256": "f6aedf170b58c89e3a657fe41a7b37a8d7b981a0d293427aea839b10512a8a1a"
+    },
+    {
+      "path": "gemma_research_public/report_context/multiseed_per_seed.csv",
+      "bytes": 3474,
+      "sha256": "93119e30cd03b4bfcc5fc04efdcc26679eacd60478485749c76350d9c8c7d452"
+    },
+    {
+      "path": "gemma_research_public/report_context/multiseed_summary.csv",
+      "bytes": 2260,
+      "sha256": "a8c7b97bdf708053e5fc1bbbcee4d3181bc8703fb23ce89d9dd6dc93abb78921"
+    },
+    {
+      "path": "gemma_research_public/report_context/seven_backbone_quality_ci.csv",
+      "bytes": 15509,
+      "sha256": "6ef7a40a6a63b6172d0e99f99ab6d082914d486e936688d63c5e7ea3a42a46b7"
+    },
+    {
+      "path": "gemma_research_public/report_context/seven_backbone_tradeoffs.csv",
+      "bytes": 17313,
+      "sha256": "ad3cfe3adce4d5093aa86ab9776164adc4c87f97b6b2ca9d033502cd93924207"
+    },
+    {
+      "path": "gemma_research_public/reports/REPORT_VI.html",
+      "bytes": 789535,
+      "sha256": "1620dc249ef722450a47e4a19a7f38b5076794f9dc290fbb1a1e20de6b660dc1"
+    },
+    {
+      "path": "gemma_research_public/reports/REPORT_VI.md",
+      "bytes": 17092,
+      "sha256": "43e475c0c44e56f400339f2a2f0be5643dce31e7a85198aa4e556a0bce6629a0"
+    },
+    {
+      "path": "gemma_research_public/reports/all_variants.csv",
+      "bytes": 3960,
+      "sha256": "8fe152ab697493b44c9cc2b78b945d23b36c8387c0d53649533a417af3bcc512"
+    },
+    {
+      "path": "gemma_research_public/reports/cached_head_timing.csv",
+      "bytes": 550,
+      "sha256": "7a050b2f42947e4ab629b07ebf2c8a096dd77b158ba82bac5c0e1a791f74af6f"
+    },
+    {
+      "path": "gemma_research_public/reports/data_splits.csv",
+      "bytes": 274,
+      "sha256": "7985647b3b430c2eb63f21d07ab29dd0bb035a789feebcb24745319e5ecf93e0"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/01_quality.png",
+      "bytes": 92188,
+      "sha256": "665077498952118d787aecb1963ec95c97ed946453dde1acf668393b22b4bcb6"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/01_quality.svg",
+      "bytes": 70857,
+      "sha256": "3985fdcc8d6322243622c1504646b0054be80d804d83fe50888292b032f0a2e7"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/02_paired_ci.png",
+      "bytes": 40577,
+      "sha256": "c669bbfc5ddf7e789be88c4c5eeb53e6e761959b293e1e58238957a53252f7b9"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/02_paired_ci.svg",
+      "bytes": 65351,
+      "sha256": "451760bff5e904bde7f28d07cd649ee3f52c94c8ee3ad59cacd0525670e629a9"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/03_ablation.png",
+      "bytes": 44815,
+      "sha256": "1a377c6b2efb1865fbd96f20ebd9779c0a366397f48af13456bf7a22fe8001ed"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/03_ablation.svg",
+      "bytes": 70484,
+      "sha256": "9c184a00a5bb7be29a18c89495fd8b42f813b744e6c23134663fd62db23a4424"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/04_domain_errors.png",
+      "bytes": 46130,
+      "sha256": "c2e5215ec0ce3ede4fb4995666864438137734621d93e0681c65646747f1b7b2"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/04_domain_errors.svg",
+      "bytes": 54372,
+      "sha256": "0abaf46b507f6d2a1ff5deecdb46f5c701e42567ee10b4f0bcc6148cd6e6ecd8"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/05_seed_variation.png",
+      "bytes": 115150,
+      "sha256": "cb427ef87ab3c5fed65b23d3071ec61c32b5d235e07c40aa9e7b8a5c8e4ef022"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/05_seed_variation.svg",
+      "bytes": 78310,
+      "sha256": "01505a9777f8134c813bb34fbf011b1f4e703f4c6736bb34640c27c8104c6a99"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/06_training_selection.png",
+      "bytes": 91478,
+      "sha256": "fe8d9935b92e3408f2bb1ada9c21d2f613fb1695527e7bbfb08705e32eda4174"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/06_training_selection.svg",
+      "bytes": 70387,
+      "sha256": "cf924f7857dad4215e16c4d6f55c2ff6088b9a2cfef8e449172867346695b3b0"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/07_native_cost.png",
+      "bytes": 60621,
+      "sha256": "c746165344c1706a97c9df4dc27ab39e3e7f8c68cafb111a557200f7da55b927"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/07_native_cost.svg",
+      "bytes": 63629,
+      "sha256": "d181c9127ccdd3beb1d5df153b84421cc881b4b54c178e47acb24e2b7c8265a5"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/08_historical_tradeoff.png",
+      "bytes": 82915,
+      "sha256": "00df6dd88e413fa47029b600a2540d3d78bac4f8b79a3dcffe404b43ed3b2189"
+    },
+    {
+      "path": "gemma_research_public/reports/figures/08_historical_tradeoff.svg",
+      "bytes": 82951,
+      "sha256": "2dfa779d7c4ea3eb11538eaad432d9bfcbd5fc5cc8ed24a844f8bd58eadfe5e0"
+    },
+    {
+      "path": "gemma_research_public/reports/main_metrics.csv",
+      "bytes": 1882,
+      "sha256": "ee1396361a013522e2186a4e6f960d8f73ff9f5b72d46aa0f4133755b09d0268"
+    },
+    {
+      "path": "gemma_research_public/reports/metric_drift.csv",
+      "bytes": 17739,
+      "sha256": "26e062d396978257ce933f1d72d6d83f175b1040f9420ae19f340af2a01b1b06"
+    },
+    {
+      "path": "gemma_research_public/reports/paired_ci.csv",
+      "bytes": 2173,
+      "sha256": "5a5ad60c1af724d3ba3419d5d297c64e279ac7126b9237bc820e8efd329a0967"
+    },
+    {
+      "path": "gemma_research_public/reports/seed_metrics.csv",
+      "bytes": 1875,
+      "sha256": "82ed9b7b6db1a67fd09e428caa947a0196d5c104a45a539cfc558c7695a442fd"
+    },
+    {
+      "path": "gemma_research_public/reports/sugar_categories.csv",
+      "bytes": 1370,
+      "sha256": "986003a6fb5c288aed954b027926108a1af63110b5d254c00e64b86fdb8a2abf"
+    },
+    {
+      "path": "gemma_research_public/reports/timing128.csv",
+      "bytes": 1845,
+      "sha256": "28f9077e4f0c349ab4dae1cb3dce99570c4dce3895327b92f3c1579ae84f0786"
+    },
+    {
+      "path": "gemma_research_public/reports/training_history.csv",
+      "bytes": 35285,
+      "sha256": "86f720f3c5582e8118a0dd415064501de7f9c8de5925706ab280ee048d9ee746"
+    },
+    {
+      "path": "gemma_research_public/reports/validation_trials.csv",
+      "bytes": 1069,
+      "sha256": "90f304e951c00654161bf5dfc3b8f17223e3d3978e902ef8e66777dbb1e218af"
+    },
+    {
+      "path": "gemma_research_public/requirements_cpu.txt",
+      "bytes": 138,
+      "sha256": "13d9691b37d782eb78020bdd5085aab0668c04601e2d43d9e3acebca3d78660e"
+    },
+    {
+      "path": "gemma_research_public/requirements_gpu.txt",
+      "bytes": 233,
+      "sha256": "654c75e886f880b131a5faaf775a2f4fae66fb0d905b2152557adcf04313c305"
+    },
+    {
+      "path": "gemma_research_public/requirements_notebooks.txt",
+      "bytes": 69,
+      "sha256": "50d1472c3ec473ba3503f7674cfac8787239ecca13973fbb24c1bcec998c9ed7"
+    },
+    {
+      "path": "gemma_research_public/setup_uv.ps1",
+      "bytes": 650,
+      "sha256": "a128d69c8a4f7a95c32e0c07157cd5c214b200cf75ecb7fd13fcc07c48f36271"
+    },
+    {
+      "path": "gemma_research_public/src/bundle.py",
+      "bytes": 7531,
+      "sha256": "f94f8d5f947a14dd991c95978307000f8c314eb140adfd5025a0e6b43faa337b"
+    },
+    {
+      "path": "gemma_research_public/src/predict_native.py",
+      "bytes": 1538,
+      "sha256": "27013deacf944657990cb6f748263019a1ae556091a5b79a6df64770af8f25bb"
+    },
+    {
+      "path": "gemma_research_public/src/refit.py",
+      "bytes": 4558,
+      "sha256": "ade7eb492c196d0e4d86284746bfb99e3bd60952af4e8eaed53612e951623ffb"
+    },
+    {
+      "path": "gemma_research_public/src/replay.py",
+      "bytes": 3273,
+      "sha256": "bab9bc3e0f5ca4d8f72e005d24f0e8a2b1846f277eee29db7d485afafda4ad1f"
+    },
+    {
+      "path": "gemma_research_public/src/report.py",
+      "bytes": 34774,
+      "sha256": "240fc1dd904fa46bd92c0b74d778949ed4731acd7fc61ffe0fbac8b51ed1aa5a"
+    },
+    {
+      "path": "gemma_research_public/src/run_native.py",
+      "bytes": 5675,
+      "sha256": "fa0c2ccffd52c5a68e1490acf7d8d6f91121edef07c1e0012fe9bf8c365900c1"
+    },
+    {
+      "path": "gemma_research_public/tools/build_notebooks.py",
+      "bytes": 15906,
+      "sha256": "915feeabbd13baf6ec6fe25e46971191630e1e0567880e9e2a8f5b45299e58a2"
+    },
+    {
+      "path": "gemma_research_public/tools/export_private_runtime.py",
+      "bytes": 1245,
+      "sha256": "eb9ba6ac05d3e8d7e42fddf9b645d86451a4c633fc2a1064b2dd95d572a7713f"
+    },
+    {
+      "path": "gemma_research_public/tools/verify_public.py",
+      "bytes": 1859,
+      "sha256": "987b88bcbc4a2c581ae494c0fe40943825d2a60b4e2b3eb1dbe4232ca505757a"
+    },
+    {
+      "path": "gemma_research_public/vendor/stage11/common.py",
+      "bytes": 1304,
+      "sha256": "4861e7f3795a71fca143735d87dcd28a3589f9fa443d291633a965fce8ceed3a"
+    },
+    {
+      "path": "gemma_research_public/vendor/stage11/learning.py",
+      "bytes": 10540,
+      "sha256": "5594ce69ecb0d1f818f284d15af5f0859d5c1429c87a0e3c7529a85cf83c3237"
+    },
+    {
+      "path": "gemma_research_public/vendor/stage11/native.py",
+      "bytes": 11217,
+      "sha256": "1df67edb55ebe88ec8efde232d63a6b6a0d3dfdd093dd5f02870021da1fabe3b"
+    },
+    {
+      "path": "gemma_research_public/vendor/stage11/prepare_data.py",
+      "bytes": 10331,
+      "sha256": "e7c13d5abf19b23f938155b1fccf9e2e4db98748343ac01b17690dc206c61c5a"
+    },
+    {
+      "path": "gemma_research_public/vendor/stage11/protocol.json",
+      "bytes": 4548,
+      "sha256": "06cd527601cd61d116c8fc558ae36899672b7512d713669c02f7a330414390c1"
+    },
+    {
+      "path": "gemma_research_public/vendor/stage11/representative_timing.py",
+      "bytes": 11366,
+      "sha256": "ed7c91b8b6b5fd6fa8f2b0d14c72b433f06cab62e729eeafc796dc4ee4824dfc"
+    },
+    {
+      "path": "gemma_research_public/vendor/stage11/run.py",
+      "bytes": 13955,
+      "sha256": "6c616e4e3f585b0a5c1a105f29e7f50fdb8c7b0e1c8dc45b997d91d39ae38d57"
     },
     {
       "path": "prepare_colab_inputs.py",

@@ -1,0 +1,9 @@
+# Preserve published artifact bytes so integrity checks also pass after cloning.
+* -text
+* whitespace=cr-at-eol
+README.md -text
+START_HERE.md -text
+REPOSITORY_LAYOUT.md -text
+GEMMA_PAPER_HANDOFF_20261017_VI.md -text
+REPOSITORY_FILES_SHA256.json -text
+.gitattributes -text

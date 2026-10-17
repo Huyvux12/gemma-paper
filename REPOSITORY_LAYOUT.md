@@ -1,4 +1,12 @@
-# Bản source và báo cáo công khai — 12/10/2026
+# Bản source và báo cáo công khai
+
+## Cập nhật 17/10/2026
+
+[Bàn giao hiện hành](GEMMA_PAPER_HANDOFF_20261017_VI.md) ghi đầy đủ tiến độ và hướng nâng paper. `gemma_research_public/` bổ sung portable source, frozen Stage11 source/protocol, hai notebook, tài liệu method/kết quả, bảng kết quả tổng hợp, báo cáo HTML/Markdown và tám biểu đồ PNG/SVG. Những bảng này không chứa caption, image ID, predictions theo record hoặc dataset fingerprints. Notebook nhúng source và aggregate context; fingerprint dữ liệu được đọc từ input riêng khi người dùng chạy. Xem README trong gói để chuẩn bị input Kaggle private.
+
+Không công khai dữ liệu, private runtime config, dataset manifest, cache, checkpoint, ZIP kết quả hoặc raw log. `PUBLIC_FILES_SHA256.json` trong gói mới và manifest ở root chỉ xác minh byte của artifact công khai. GPU producer cũ đã chạy hoàn tất; public packaging được kiểm riêng, không phải một lượt GPU mới.
+
+## Cây lịch sử đã công khai 12/10/2026
 
 Toàn bộ 113 file source Python từ gói bàn giao, mọi báo cáo Markdown và notebook Kaggle đã được giữ. Notebook Colab có bản public tương đương về logic, chuyển payload dữ liệu nhúng sang input riêng. Cây public thêm README, hướng dẫn GitHub và verifier byte. Có bảng metric tổng hợp, protocol cấu hình Stage8 và hai định dạng hình trade-off. Kết quả thống kê, GPU/PAC-S và CI được trình bày trong báo cáo Markdown.
 

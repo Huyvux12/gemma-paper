@@ -1,0 +1,11 @@
+{
+  "scope": "Public aggregate result tables only; no record/data fingerprints",
+  "date": "2026-10-16",
+  "files": {
+    "crossed_global_ci.csv": "f6aedf170b58c89e3a657fe41a7b37a8d7b981a0d293427aea839b10512a8a1a",
+    "multiseed_per_seed.csv": "93119e30cd03b4bfcc5fc04efdcc26679eacd60478485749c76350d9c8c7d452",
+    "multiseed_summary.csv": "a8c7b97bdf708053e5fc1bbbcee4d3181bc8703fb23ce89d9dd6dc93abb78921",
+    "seven_backbone_quality_ci.csv": "6ef7a40a6a63b6172d0e99f99ab6d082914d486e936688d63c5e7ea3a42a46b7",
+    "seven_backbone_tradeoffs.csv": "ad3cfe3adce4d5093aa86ab9776164adc4c87f97b6b2ca9d033502cd93924207"
+  }
+}

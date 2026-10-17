@@ -1,0 +1,52 @@
+{
+  "version": "stage11-public-rebuild-v1",
+  "created_date": "2026-10-15",
+  "status": "locked_before_new_inference",
+  "provenance": "New implementation from public inputs and Stage1-8 source. Not an exact recovery of Stage9/10.",
+  "account": "huyv12345",
+  "candidate_policy": "Exclude candidate captions that exactly equal one supplied reference in both human datasets, as implemented in the data producer before any scoring. Report observed row/candidate/image counts; do not equate changed pixel-hash identity or rebuilt Sugar split with historical Stage10 cohorts.",
+  "seed": 20261015,
+  "models": {
+    "gemma": {"repo": "google/embeddinggemma-2", "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b", "prefix": "A photo depicts ", "scale": 2.5},
+    "clip": {"repo": "openai/clip-vit-base-patch32", "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268", "prefix": "A photo depicts ", "scale": 2.5},
+    "siglip224": {"repo": "google/siglip2-base-patch16-224", "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2", "prefix": "", "scale": 1.0}
+  },
+  "data": {
+    "sugar_commit": "0047054b243992f0fad63d6f64f7544862daf846",
+    "flickr_repo": "yuwd/Flickr8k-HumanEval",
+    "flickr_revision": "c30e1e67e2b37a42ecffaf9a88a05458ca05b973",
+    "polaris_repo": "yuwd/Polaris",
+    "polaris_revision": "e527aa82a79f08cd97792baf624853b80aecc81f",
+    "polaris_train_shards": 3,
+    "sugar_train_images": 444,
+    "sugar_validation_images": 111,
+    "polaris_train_images": 500,
+    "polaris_validation_images": 100,
+    "flickr_prior_seed": 20261008,
+    "flickr_development_images": 100,
+    "flickr_train_images": 80,
+    "split_policy": "Pixel-hash-disjoint train/validation/test globally. Polaris official TEST reserved first, Flickr prior100 reconstructed from public names; Sugar split rebuilt, not historical3949/560. Training excluded from all test media."
+  },
+  "learning": {
+    "seeds": [11, 23, 37], "epochs": 15, "batch_size": 128,
+    "learning_rate": 0.001, "weight_decay": 0.0001,
+    "temperature": 0.05, "sugar_margin": 0.02, "human_pair_cap": 8192,
+    "configs": [
+      {"rank": 16, "radius": 0.03, "preservation": 0.1},
+      {"rank": 16, "radius": 0.1, "preservation": 0.1},
+      {"rank": 32, "radius": 0.03, "preservation": 0.1},
+      {"rank": 32, "radius": 0.1, "preservation": 0.1},
+      {"rank": 32, "radius": 0.1, "preservation": 0.01}
+    ],
+    "primary": "mean",
+    "phases": ["mean", "uncertainty"],
+    "selection": "Mean validation gains across seeds must be nonnegative in all 3 domains. Maximize weakest gain normalized by [0.01,0.02,0.02]; fallback base. Select epoch on validation per seed; refit train+validation using median epoch. Seed11 single is primary; ensemble3 diagnostic.",
+    "uncertainty": "Human pair loss weighted by abs(meanA-meanB)/(abs(meanA-meanB)+SE(A)+SE(B)+1e-6), divided by sum of batch weights to retain equal domain budgets. Singleton SE=0 is a heuristic, not a calibrated uncertainty estimate. Comparison against mean phase is exploratory.",
+    "ablation": "Gemma only: fixed rank32 radius0.03 preservation0.1, full15epochs seed11; sugar_only, human_only, no_preservation, full_control. No test-based selection."
+  },
+  "precision": "Gemma FP32 on T4, BF16 only on hardware with native BF16 support; follow official model-card dynamic-range guidance and never use Gemma FP16. CLIP and SigLIP native FP16. Cache and adapters FP32. No equivalence claim across precisions. This correction was made before any Stage11 inference; data-producer v1 protocol may retain the preliminary FP16 plan, which does not affect its data-only computation.",
+  "latency": {"batch_sizes": [1,8], "warmup": 5, "repetitions": 20, "tf32": false, "panel": "8 deterministic Flickr test records, predecoded images; includes preprocessing, encoding, normalization, scoring; excludes disk IO and model download. Interleave base/primary variants."},
+  "statistics": {"bootstrap_replicates": 2000, "unit": "paired image cluster", "seed": 20261015, "correlation": "Kendall tau-c, raw individual votes and candidate mean separately", "sugar_ties": "strict greater; ties fail"},
+  "interpretation": "Exploratory continuation on previously observed corpora. Changed Sugar split and new adapter prohibit direct attribution against historical Stage9/10. No SOTA or fresh holdout claim.",
+  "deferred_baselines": ["Stage9 exact source/checkpoint unavailable", "CLIP-L14", "SigLIP256", "SPECS author checkpoint", "PAC-S author checkpoint", "Polos", "VQAScore", "FLEUR strict original prefix unavailable"]
+}

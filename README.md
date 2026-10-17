@@ -1,5 +1,7 @@
 # EmbeddingGemma-2 cho đánh giá caption ảnh
 
+**Cập nhật 17/10/2026:** đọc [bàn giao nghiên cứu và kế hoạch nâng paper](GEMMA_PAPER_HANDOFF_20261017_VI.md) trước. Bản mới đã hoàn tất Stage11/12 và một lượt Gemma end-to-end trên Kaggle T4. [Gói code/notebook hiện hành](gemma_research_public/README_VI.md) có [kết quả và trade-off](gemma_research_public/RESULTS_VI.md), [báo cáo đầy đủ](gemma_research_public/reports/REPORT_VI.md) và biểu đồ. Notebook public cần input dữ liệu/cấu hình riêng theo hướng dẫn. Các mục Stage1–8 bên dưới giữ làm lịch sử, không phải kết luận hiện hành.
+
 Repository nghiên cứu thực nghiệm: thay encoder trong score ảnh–caption, kiểm chứng đối chứng, nén embedding và học residual adapter ở đầu ra. Source Stage1–8 đã giải nén thành cây thư mục; có context, notebook, báo cáo, bảng metric tổng hợp và biểu đồ báo cáo. Checkpoint, cache embedding, record dữ liệu, manifest và log nguyên bản chưa được công khai: xem `REPOSITORY_LAYOUT.md`.
 
 ## Đọc trước

@@ -1,5 +1,7 @@
 # Mở repository chuyển phiên
 
+**Bắt đầu với bản hiện hành 17/10/2026:** [GEMMA_PAPER_HANDOFF_20261017_VI.md](GEMMA_PAPER_HANDOFF_20261017_VI.md). File này tổng hợp những gì đã làm, kết quả đã xác minh, giới hạn và thứ tự P0–P5 để nâng chất lượng paper. Xem [gemma_research_public](gemma_research_public/README_VI.md) để lấy notebook Kaggle và code mới. Lượt GPU đã COMPLETE; không chạy lại chỉ để kiểm trạng thái. Phần còn lại của trang này là hướng dẫn Stage1–8 lịch sử.
+
 Repository chứa context, báo cáo Stage8, source, metric và output dạng bảng đã xác minh. Checkpoint, cache `.npz`, record dữ liệu, dataset manifest và raw log chưa công khai; chúng còn trong gói bàn giao đầy đủ. Xem `REPOSITORY_LAYOUT.md`. `baseline/` giữ toàn bộ gói Stage1–7 đã giải nén; source snapshot v1/v2 cũng đã giải nén thành thư mục. Không cần ZIP để đọc source/báo cáo. Tái lập train/evaluate cần khôi phục cache từ gói bàn giao đầy đủ hoặc tạo lại bằng inference.
 
 ## Đọc và phân tích trước, chưa cần train

@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+runs/
+assets/
+data/
+gemma_private_runtime.json
+private_runtime_config.json

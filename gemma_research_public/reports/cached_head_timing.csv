@@ -1,0 +1,7 @@
+variant,batch,p50_ms_call,p95_ms_call,scope
+base,1,0.03906299980371841,0.05549550019168237,cached FP32 embedding head only
+mean_single,1,0.8002660001693584,0.9245281498351685,cached FP32 embedding head only
+uncertainty_single,1,0.8877264999682666,1.073119200191286,cached FP32 embedding head only
+base,8,0.03914699982487946,0.05403724976531521,cached FP32 embedding head only
+mean_single,8,0.745733000258042,0.8673667502534954,cached FP32 embedding head only
+uncertainty_single,8,0.7439280002472515,0.8915094496842356,cached FP32 embedding head only

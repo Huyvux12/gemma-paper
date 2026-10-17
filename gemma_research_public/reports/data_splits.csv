@@ -1,0 +1,10 @@
+domain,split,records,images,votes
+sugar,train,2271,444,0
+sugar,validation,537,111,0
+sugar,test,4703,1005,0
+flickr,train,442,80,1326
+flickr,validation,110,20,330
+flickr,test,5112,900,15336
+polaris,train,619,500,763
+polaris,validation,126,100,158
+polaris,test,8722,2737,26098

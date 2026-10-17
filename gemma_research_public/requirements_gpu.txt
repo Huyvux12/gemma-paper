@@ -1,0 +1,10 @@
+# Kaggle: retain the preinstalled matched CUDA torch/torchvision pair.
+numpy==2.3.5
+scipy==1.17.0
+Pillow==12.3.0
+transformers==5.19.0
+sentence-transformers==6.1.0
+huggingface_hub==1.33.0
+accelerate
+pyarrow==25.0.1
+matplotlib==3.10.8

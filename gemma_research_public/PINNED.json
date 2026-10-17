@@ -1,0 +1,24 @@
+{
+  "gemma_model": {
+    "repo": "google/embeddinggemma-2",
+    "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+    "prefix": "A photo depicts ",
+    "scale": 2.5
+  },
+  "gemma_weights": [
+    {
+      "name": "model.safetensors",
+      "sha256": "197a32965d4b1105faf060417baa899e193fb73cd401f42ec9295234d5553d79",
+      "bytes": 1488915288
+    }
+  ],
+  "vendor_sha256": {
+    "vendor/stage11/common.py": "4861e7f3795a71fca143735d87dcd28a3589f9fa443d291633a965fce8ceed3a",
+    "vendor/stage11/learning.py": "5594ce69ecb0d1f818f284d15af5f0859d5c1429c87a0e3c7529a85cf83c3237",
+    "vendor/stage11/native.py": "1df67edb55ebe88ec8efde232d63a6b6a0d3dfdd093dd5f02870021da1fabe3b",
+    "vendor/stage11/run.py": "6c616e4e3f585b0a5c1a105f29e7f50fdb8c7b0e1c8dc45b997d91d39ae38d57",
+    "vendor/stage11/representative_timing.py": "ed7c91b8b6b5fd6fa8f2b0d14c72b433f06cab62e729eeafc796dc4ee4824dfc",
+    "vendor/stage11/prepare_data.py": "e7c13d5abf19b23f938155b1fccf9e2e4db98748343ac01b17690dc206c61c5a",
+    "vendor/stage11/protocol.json": "06cd527601cd61d116c8fc558ae36899672b7512d713669c02f7a330414390c1"
+  }
+}
